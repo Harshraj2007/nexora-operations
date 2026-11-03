@@ -1,30 +1,21 @@
-# Nexora Operations
+## 📌 About Nexora
 
-An operations dashboard foundation for a B2B business management and commerce platform.
+**Nexora** is an all-in-one, full-stack commerce and business operations platform designed to streamline both customer shopping and back-office management within a single shared ecosystem. 
 
-## Included in this first release
+Powered by **React**, **Vite**, and **Supabase (PostgreSQL with Row-Level Security)**, Nexora bridges the gap between customer-facing storefronts and internal business operations—from inventory deduction to invoice generation and order lifecycle tracking.
 
-- Executive overview dashboard and revenue reporting
-- Product catalogue with live search and product creation
-- Inventory alerts for low-stock products
-- Recent orders with status progression
-- Responsive desktop and mobile interface
+### 🚀 Key Features
 
-## Run locally
+* **🛍️ Customer Storefront**: Responsive catalog with category filtering, real-time stock indicators, slide-out cart, and order tracking.
+* **⚡ Atomic Checkout**: Database-level RPC checkout that reserves inventory, calculates taxes/totals, and auto-generates invoices in a single safe transaction.
+* **💳 Integrated Billing & Payments**: Seamless Razorpay checkout with invoice generation, overdue tracking, and refund/cancellation handling.
+* **🛡️ Role-Based Access Control (RBAC)**: Fine-grained PostgreSQL RLS policies tailored for 7 roles: *Owner, Admin, Manager, Sales, Inventory, Support, and Customer*.
+* **🏬 Inventory & Stock Movements**: Automatic stock adjustments with complete audit logs and threshold alert tracking.
+* **📈 Operations & Analytics**: Real-time business health score, revenue charts, order management drawer, and customer relationship monitoring.
 
-```bash
-npm install
-npm run dev
-```
+### 🛠️ Tech Stack
 
-Open `http://localhost:5173` in your browser.
-
-## Production build
-
-```bash
-npm run build
-```
-
-## Planned platform modules
-
-The next development phases cover authentication and role-based access control, a database and REST API, CRM/customer records, payment and invoice integration, notifications, analytics, and AI-assisted business insights.
+* **Frontend**: React 18, Vite, CSS Design System
+* **Backend & Database**: Supabase (PostgreSQL, Row-Level Security, Edge Functions, Database Triggers)
+* **Payments**: Razorpay
+* **Deployment**: Vercel
